@@ -105,5 +105,13 @@ class agent:
             if step == "echo message":
                 return self.tools["echo"](text=task.context.get("text" , "")) if "echo" in self.tools else "ehco"
             if step == "fianlize reply":
-                return f"reply ready":
-            if step == "recall ci"
+                return f"reply ready"
+            if step == "work done":
+                return f"do generic work"
+            if step == "save result":
+                return f"saved "
+            else:
+                return f"unknown step:{step}"
+            
+# public run 
+    def 
