@@ -114,4 +114,11 @@ class agent:
                 return f"unknown step:{step}"
             
 # public run 
-    def 
+def run(self, task: Task):
+    self.memory.add(self.name, f"start task {task.id } goal:{task.goal}")
+    
+        
+    
+                                                                   
+                                                                  
+                                                                          
