@@ -116,9 +116,8 @@ class agent:
 # public run 
 def run(self, task: Task):
     self.memory.add(self.name, f"start task {task.id } goal:{task.goal}")
-    
-        
-    
-                                                                   
+    task.status = "running"
+    try:
+        for step in                                                                      
                                                                   
                                                                           
