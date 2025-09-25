@@ -119,6 +119,9 @@ def run(self, task: Task):
     task.status = "running"
 for step in self.plan(task):
     out = self.act(step , task)
+    self.memory.add(self.name , f"step:{step} output:{out}")
+    task.reult = out 
+    
                                                   
                                                                   
                                                                           
